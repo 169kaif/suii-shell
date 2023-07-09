@@ -1,0 +1,42 @@
+DESCRIPTION
+
+echo command:
+//error1: checking if invalid options have been passed
+//edgecase: nothing is passed for pargs so it may throw error during printf
+//error2: no arguments passed for echo error(demonstrated in code)
+options handled -> --help: displays help    ,   -n: does not output trailing newline
+
+
+pwd command:
+//error1: invalid options passed for pwd
+//error2: unexpected arguments passed
+options handled -> -L: logical, use pwd even if it contains symlinks  , -P: avoid all symlinks
+
+cd command:
+//error1: when no argument is passed
+//error2: chdir failed
+
+rm command:
+//error1: no file specified for rm to remove
+//error2: IF THREADING IS USED AND FILE NAME CONTAINS ")", ERROR OCCURS
+options handled -> -i: prompt before removal of file,  -f: force removal of file, no prompt
+
+ls command:
+//handling error1: syntax error
+//handling error2: empty directory
+options handled: -c: displays file in columns,  -d: displays empty directories
+
+cat command:
+//error1: improper arguments received
+//error2: invalid options given
+options handled: -n:-> numbers lines of the file , -E: $ sign at the end of lines
+
+date command:
+//error1: invalid options passed error
+//error2: no arguments passed after option -d
+options handled:  if -u is there, prints UTC,  if -d is there, prints time asked by string
+
+mkdir command:
+//error1: invalid options passed check
+//error2: invalid check set to 1 if invalid syntax
+options handled: -v: creates rwx, -m sets permissions
