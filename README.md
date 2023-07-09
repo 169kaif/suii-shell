@@ -8,7 +8,7 @@ The shell provides a command line interface where users can enter commands.
 The shell handles two types of commands. They are:
 <ul>
 <li>Internal Commands: These commands are handled directly by the shell.</li>
-<li></li>External Commands: These commands are executed by external programs.</li>
+<li>External Commands: These commands are executed by external programs.</li>
 </ul>
 
 The supported internal commands are: ``` "cd" , "echo" , "pwd" ```
